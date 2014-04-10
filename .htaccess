@@ -1,0 +1,4 @@
+RewriteEngine on
+#RewriteBase /dailylog/
+RewriteCond $1 !^(index\.php|uploads|assets|system|uploads|favicon.ico|API.TXT)
+RewriteRule ^(.*)$ index.php/$1 [QSA,L]
